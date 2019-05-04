@@ -33,7 +33,7 @@ def parse(status):
 	f.close()
 
 
-
+# 3 line code below can grab tweets from one person
 public_tweets = api.user_timeline('133880286')
 for tweet in public_tweets:
 	parse(tweet)
@@ -49,7 +49,7 @@ for tweet in public_tweets:
 # 	break
 
 
-
+# the step 1,2,3 is a realtime tweeets grab function
 # step 1: Creating a StreamListener
 class MyStreamListener(tweepy.StreamListener):
 	def on_status(self, status):
